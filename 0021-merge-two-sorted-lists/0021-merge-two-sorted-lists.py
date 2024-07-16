@@ -17,7 +17,6 @@ class Solution:
             head = list2
             list2 = list2.next
         current = head
-        
         while list1 is not None and list2 is not None:
             if list1.val <= list2.val:
                 current.next = list1
@@ -26,7 +25,6 @@ class Solution:
                 current.next = list2
                 list2 = list2.next
             current = current.next
-        
         if list1 is not None:
             current.next = list1
         elif list2 is not None:
