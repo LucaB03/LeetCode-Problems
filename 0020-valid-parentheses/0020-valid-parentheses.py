@@ -1,5 +1,7 @@
 class Solution:
     def isValid(self, s: str) -> bool:
+        if s[0] in [')', '}', ']'] or s[len(s)-1] in ['(', '{', '[']:
+            return False
         stack = []
         for c in s:
             if c in ['(', '{', '[']:
