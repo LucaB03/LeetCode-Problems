@@ -1,4 +1,4 @@
-​# Solution
+# Solution
 1. Check if the list begins with a closing parentheses, if so, return False
 2. Iterate over the string, if the char is an opening parentheses, push it to a stack.
 3. If its a closing parentheses and the stack is empty, we know there is now possibility of a valid parentheses pair, return False.
